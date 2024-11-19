@@ -63,11 +63,13 @@ export const TaskItem: React.FC<TaskItemProps> = props => {
   }, [textRef, task]);
 
   const getX = () => {
-    const width = task.x2 - task.x1;
-    const hasChild = task.barChildren.length > 0;
+    const hasChild = task.barChildren.length > 0; // Check for children
+    const width = task.x2 - task.x1; // Width of the bar
+
     if (isTextInside) {
-      return task.x1 + width * 0.5;
+      return task.x1 + 10; // Align text to the starting point of the bar
     }
+
     if (rtl && textRef.current) {
       return (
         task.x1 -
