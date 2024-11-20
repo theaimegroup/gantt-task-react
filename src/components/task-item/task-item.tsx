@@ -122,6 +122,17 @@ export const TaskItem: React.FC<TaskItemProps> = props => {
       >
         {task.name}
       </text>
+      <text
+        x={task.x2 - 80}
+        y={task.y + taskHeight * 0.5}
+        className={
+          isTextInside
+            ? style.barLabel
+            : style.barLabel && style.barLabelOutside
+        }
+      >
+        {task.start.toLocaleString("en-US", { month: "short" }) + ' ' + task.start.getDate()} - {task.end.toLocaleString("en-US", { month: "short" }) + ' ' + task.end.getDate()}
+      </text>
     </g>
   );
 };
