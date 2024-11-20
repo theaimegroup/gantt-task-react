@@ -35,16 +35,16 @@ export const Project: React.FC<TaskItemProps> = ({ task, isSelected }) => {
         x={task.x1}
         width={projectWith}
         y={task.y}
-        height={task.height}
+        height={task.height + 10}
         rx={task.barCornerRadius}
         ry={task.barCornerRadius}
         className={styles.projectBackground}
       />
       <rect
-        x={task.progressX}
+        x={task.progressX + 10}
         width={task.progressWidth}
-        y={task.y}
-        height={task.height}
+        y={task.y + 25}
+        height={task.height - 25}
         ry={task.barCornerRadius}
         rx={task.barCornerRadius}
         fill={processColor}

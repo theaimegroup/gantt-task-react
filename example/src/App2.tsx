@@ -1,4 +1,4 @@
-import { Gantt, Task, EventOption, StylingOption, ViewMode, DisplayOption } from 'gantt-task-react';
+import { Gantt } from 'gantt-task-react';
 import "gantt-task-react/dist/index.css";
 
 
