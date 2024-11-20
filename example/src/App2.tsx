@@ -81,12 +81,6 @@ const App = () => {
             type: 'project',
             progress: 20,
             isDisabled: true,
-            styles: {
-                progressColor: '#FFD700',
-                progressSelectedColor: '#FFD700',
-                backgroundSelectedColor: "#242424",
-                backgroundColor: '#242424'
-            },
         },
         {
             start: new Date(2024, 9, 1),
@@ -95,13 +89,7 @@ const App = () => {
             id: '9',
             type: 'project',
             progress: 20,
-            isDisabled: true,
-            styles: {
-                progressColor: '#FFD700',
-                progressSelectedColor: '#FFD700',
-                backgroundSelectedColor: "#242424",
-                backgroundColor: '#242424'
-            },
+            isDisabled: true
         },
     ];
 
