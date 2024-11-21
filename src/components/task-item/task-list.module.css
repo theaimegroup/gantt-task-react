@@ -21,3 +21,11 @@
   user-select: none;
   pointer-events: none;
 }
+
+.icon {
+  content: "ABC";
+  display: inline-block;
+  width: 50px;
+  /* Adjust size as needed */
+  height: 50px;
+}

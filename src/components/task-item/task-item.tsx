@@ -35,6 +35,7 @@ export const TaskItem: React.FC<TaskItemProps> = props => {
   } = {
     ...props,
   };
+  console.log(task);
   const textRef = useRef<SVGTextElement>(null);
   const [taskItem, setTaskItem] = useState<JSX.Element>(<div />);
   const [isTextInside, setIsTextInside] = useState(true);
@@ -110,8 +111,13 @@ export const TaskItem: React.FC<TaskItemProps> = props => {
       }}
     >
       {taskItem}
-      <text
+      {task.typeInternal === 'task' && <svg
         x={getX()}
+        y={task.y}
+        baseProfile="full" height="30" version="1.1" width="29" xmlns="http://www.w3.org/2000/svg"><defs /><circle cx="14" cy="15" fill="none" r="8" stroke="yellow" stroke-width="3" />
+      </svg>}
+      <text
+        x={task.typeInternal === 'task' ? getX() + 30 : getX()}
         y={task.y + taskHeight * 0.5}
         className={
           isTextInside
@@ -133,6 +139,6 @@ export const TaskItem: React.FC<TaskItemProps> = props => {
       >
         {task.start.toLocaleString("en-US", { month: "short" }) + ' ' + task.start.getDate()} - {task.end.toLocaleString("en-US", { month: "short" }) + ' ' + task.end.getDate()}
       </text>
-    </g>
+    </g >
   );
 };
