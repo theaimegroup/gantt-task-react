@@ -22,7 +22,9 @@ const App = () => {
             id: '1',
             type: 'task',
             isDisabled: true,
-            icon: <rect x="0.883883" y="7" width="8.75" height="8.75" rx="1.375" transform="rotate(-45 0.883883 7)" stroke="#EDFF00" stroke-width="1.25" />
+            icon: <svg width="14" height="14" viewBox="2 2 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.883883" y="7" width="8.75" height="8.75" rx="1.375" transform="rotate(-45 0.883883 7)" stroke="#EDFF00" stroke-width="1.25" />
+            </svg>
         },
         {
             start: new Date(2024, 3, 1),
@@ -32,7 +34,9 @@ const App = () => {
             type: 'task',
             isDisabled: true,
             dependencies: ['1'],
-            icon: <circle cx="6" cy="6" r="5.375" stroke="#EDFF00" stroke-width="1.25" />
+            icon: <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="6" cy="6" r="5.375" stroke="#EDFF00" stroke-width="1.25" />
+            </svg>
         },
         {
             start: new Date(2024, 5, 1),
@@ -42,7 +46,9 @@ const App = () => {
             type: 'task',
             dependencies: ['1'],
             isDisabled: true,
-            icon: <circle cx="6" cy="6" r="5.375" stroke="#EDFF00" stroke-width="1.25" />
+            icon: <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="6" cy="6" r="5.375" stroke="#EDFF00" stroke-width="1.25" />
+            </svg>
         },
         {
             start: new Date(2024, 7, 1),
@@ -52,7 +58,9 @@ const App = () => {
             type: 'task',
             dependencies: ['3'],
             isDisabled: true,
-            icon: <circle cx="6" cy="6" r="5.375" stroke="#EDFF00" stroke-width="1.25" />
+            icon: <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="6" cy="6" r="5.375" stroke="#EDFF00" stroke-width="1.25" />
+            </svg>
         },
         {
             start: new Date(2023, 12, 1),
@@ -61,7 +69,9 @@ const App = () => {
             id: '5',
             type: 'task',
             isDisabled: true,
-            icon: <rect x="0.883883" y="7" width="8.75" height="8.75" rx="1.375" transform="rotate(-45 0.883883 7)" stroke="#EDFF00" stroke-width="1.25" />
+            icon: <svg width="14" height="14" viewBox="2 2 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.883883" y="7" width="8.75" height="8.75" rx="1.375" transform="rotate(-45 0.883883 7)" stroke="#EDFF00" stroke-width="1.25" />
+            </svg>
         },
         {
             start: new Date(2023, 12, 1),
@@ -88,7 +98,9 @@ const App = () => {
             id: '7',
             type: 'task',
             isDisabled: true,
-            icon: <rect x="0.883883" y="7" width="8.75" height="8.75" rx="1.375" transform="rotate(-45 0.883883 7)" stroke="#EDFF00" stroke-width="1.25" />
+            icon: <svg width="14" height="14" viewBox="2 2 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.883883" y="7" width="8.75" height="8.75" rx="1.375" transform="rotate(-45 0.883883 7)" stroke="#EDFF00" stroke-width="1.25" />
+            </svg>
         },
         {
             start: new Date(2023, 12, 1),
@@ -97,7 +109,9 @@ const App = () => {
             id: '8',
             type: 'task',
             isDisabled: true,
-            icon: <rect x="0.883883" y="7" width="8.75" height="8.75" rx="1.375" transform="rotate(-45 0.883883 7)" stroke="#EDFF00" stroke-width="1.25" />
+            icon: <svg width="14" height="14" viewBox="2 2 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.883883" y="7" width="8.75" height="8.75" rx="1.375" transform="rotate(-45 0.883883 7)" stroke="#EDFF00" stroke-width="1.25" />
+            </svg>
         },
         {
             start: new Date(2024, 5, 1),
