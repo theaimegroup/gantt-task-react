@@ -35,7 +35,8 @@ export const TaskItem: React.FC<TaskItemProps> = props => {
   } = {
     ...props,
   };
-  console.log(task);
+  const Icon = task?.icon;
+  console.log(Icon);
   const textRef = useRef<SVGTextElement>(null);
   const [taskItem, setTaskItem] = useState<JSX.Element>(<div />);
   const [isTextInside, setIsTextInside] = useState(true);
@@ -113,7 +114,7 @@ export const TaskItem: React.FC<TaskItemProps> = props => {
       {taskItem}
       {task.typeInternal === 'task' && <svg x={getX() + 10}
         y={task.typeInternal === 'task' ? task.y + 15 : task.y} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="6" cy="6" r="5.375" stroke="#EDFF00" stroke-width="1.25" />
+        {Icon}
       </svg>
       }
       <text

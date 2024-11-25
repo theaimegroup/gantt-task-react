@@ -83,6 +83,7 @@ export interface DisplayOption {
    */
   locale?: string;
   rtl?: boolean;
+  icon?: HTMLAnchorElement
 }
 
 export interface StylingOption {
