@@ -5,7 +5,7 @@ import React, {
   useEffect,
   useMemo,
 } from "react";
-import { ViewMode, GanttProps, Task } from "../../types/public-types";
+import { GanttProps, Task } from "../../types/public-types";
 import { GridProps } from "../grid/grid";
 import { ganttDateRange, seedDates } from "../../helpers/date-helper";
 import { CalendarProps } from "../calendar/calendar";
@@ -31,7 +31,7 @@ export const Gantt: React.FunctionComponent<GanttProps> = ({
   listCellWidth = "155px",
   rowHeight = 50,
   ganttHeight = 0,
-  viewMode = ViewMode.Day,
+  viewMode = "Day",
   preStepsCount = 1,
   locale = "en-GB",
   barFill = 60,

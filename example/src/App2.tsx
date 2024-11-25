@@ -61,7 +61,7 @@ const App = () => {
         {
             start: new Date(2023, 12, 1),
             end: new Date(2024, 5, 30),
-            name: 'Energy Usage Analysis',
+            name: 'Variation',
             id: '6',
             type: 'task',
             isDisabled: true,
@@ -75,10 +75,18 @@ const App = () => {
             isDisabled: true,
         },
         {
+            start: new Date(2023, 12, 1),
+            end: new Date(2024, 5, 30),
+            name: 'Energy Usage Analysis',
+            id: '8',
+            type: 'task',
+            isDisabled: true,
+        },
+        {
             start: new Date(2024, 5, 1),
             end: new Date(2025, 5, 30),
             name: 'Internal Wall Insulation (IWI)',
-            id: '8',
+            id: '9',
             type: 'project',
             progress: 20,
             isDisabled: true,
@@ -87,7 +95,7 @@ const App = () => {
             start: new Date(2024, 9, 1),
             end: new Date(2025, 5, 30),
             name: 'Loft Insulation',
-            id: '9',
+            id: '10',
             type: 'project',
             progress: 20,
             isDisabled: true
@@ -97,18 +105,19 @@ const App = () => {
     return <Gantt
         tasks={tasks}
         viewMode='Month'
-        arrowColor='#FFD700'
-        barProgressColor='#FFD700'
-        barProgressSelectedColor='#FFD700'
+        arrowColor='rgba(237, 255, 0, 1)'
+        barProgressColor='rgba(237, 255, 0, 1)'
+        barProgressSelectedColor='rgba(237, 255, 0, 1)'
         barBackgroundColor='#242424'
         barBackgroundSelectedColor='#242424'
-        projectProgressColor='#FFD700'
-        projectProgressSelectedColor='#FFD700'
-        projectBackgroundColor='#242424'
-        projectBackgroundSelectedColor='#242424'
+        projectProgressColor='rgba(237, 255, 0, 1)'
+        projectProgressSelectedColor='rgba(237, 255, 0, 1)'
+        projectBackgroundColor='rgba(37, 36, 36, 1)'
+        projectBackgroundSelectedColor='rgba(37, 36, 36, 1)'
         barFill={60}
-        barCornerRadius={5}
-        fontSize='10px'
+        barCornerRadius={10}
+        fontSize='12px'
+        fontFamily='DM Sans'
         listCellWidth=""
         columnWidth={115}
     />

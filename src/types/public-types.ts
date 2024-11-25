@@ -75,7 +75,7 @@ export interface EventOption {
 }
 
 export interface DisplayOption {
-  viewMode?: ViewMode;
+  viewMode?: string;
   viewDate?: Date;
   preStepsCount?: number;
   /**

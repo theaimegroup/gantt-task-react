@@ -35,7 +35,7 @@ export const Project: React.FC<TaskItemProps> = ({ task, isSelected }) => {
         x={task.x1}
         width={projectWith}
         y={task.y}
-        height={task.height + 10}
+        height={task.height + 15}
         rx={task.barCornerRadius}
         ry={task.barCornerRadius}
         className={styles.projectBackground}
@@ -43,7 +43,7 @@ export const Project: React.FC<TaskItemProps> = ({ task, isSelected }) => {
       <rect
         x={task.progressX + 10}
         width={task.progressWidth}
-        y={task.y + 25}
+        y={task.y + 25 + 5}
         height={task.height - 25}
         ry={task.barCornerRadius}
         rx={task.barCornerRadius}
@@ -52,11 +52,11 @@ export const Project: React.FC<TaskItemProps> = ({ task, isSelected }) => {
       <rect
         x={task.x1 + task.progressWidth + 7}
         width={projectWith - task.progressWidth - 15}
-        y={task.y + 25}
+        y={task.y + 25 + 5}
         height={task.height - 25}
         ry={task.barCornerRadius}
         rx={task.barCornerRadius}
-        fill={"#555"}
+        fill={"rgba(52, 52, 52, 1)"}
       />
       <rect
         fill={barColor}

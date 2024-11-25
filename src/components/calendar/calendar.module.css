@@ -10,7 +10,7 @@
 }
 
 .calendarTopTick {
-  stroke: #242424;
+  stroke: rgba(37, 36, 36, 1);
 }
 
 .calendarTopText {
@@ -25,7 +25,7 @@
 }
 
 .calendarHeader {
-  fill: #242424;
-  stroke: #242424;
+  fill: rgba(37, 36, 36, 1);
+  stroke: rgba(37, 36, 36, 1);
   stroke-width: 1.4;
 }

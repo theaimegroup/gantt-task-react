@@ -111,14 +111,14 @@ export const TaskItem: React.FC<TaskItemProps> = props => {
       }}
     >
       {taskItem}
-      {task.typeInternal === 'task' && <svg
-        x={getX()}
-        y={task.y}
-        baseProfile="full" height="30" version="1.1" width="29" xmlns="http://www.w3.org/2000/svg"><defs /><circle cx="14" cy="15" fill="none" r="8" stroke="yellow" stroke-width="3" />
-      </svg>}
+      {task.typeInternal === 'task' && <svg x={getX() + 10}
+        y={task.typeInternal === 'task' ? task.y + 15 : task.y} width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="6" cy="6" r="5.375" stroke="#EDFF00" stroke-width="1.25" />
+      </svg>
+      }
       <text
         x={task.typeInternal === 'task' ? getX() + 30 : getX()}
-        y={task.y + taskHeight * 0.5}
+        y={task.typeInternal === 'task' ? task.y + taskHeight * 0.5 + 5 : task.y + taskHeight * 0.5}
         className={
           isTextInside
             ? style.barLabel
@@ -130,12 +130,15 @@ export const TaskItem: React.FC<TaskItemProps> = props => {
       </text>
       <text
         x={task.x2 - 80}
-        y={task.y + taskHeight * 0.5}
+        y={task.typeInternal === 'task' ? task.y + taskHeight * 0.5 + 5 : task.y + taskHeight * 0.5}
         className={
           isTextInside
             ? style.barLabel
             : style.barLabel && style.barLabelOutside
         }
+        style={{
+          fill: 'rgba(179, 182, 195, 1)'
+        }}
       >
         {task.start.toLocaleString("en-US", { month: "short" }) + ' ' + task.start.getDate()} - {task.end.toLocaleString("en-US", { month: "short" }) + ' ' + task.end.getDate()}
       </text>
