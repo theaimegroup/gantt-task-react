@@ -146,9 +146,9 @@ const App = () => {
         projectBackgroundColor='rgba(37, 36, 36, 1)'
         projectBackgroundSelectedColor='rgba(37, 36, 36, 1)'
         barFill={60}
-        barCornerRadius={10}
+        barCornerRadius={5}
         fontSize='12px'
-        fontFamily='DM Sans'
+        fontFamily='Monospace'
         listCellWidth=""
         columnWidth={115}
     />

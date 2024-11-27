@@ -44,16 +44,16 @@ export const Project: React.FC<TaskItemProps> = ({ task, isSelected }) => {
         x={task.progressX + 10}
         width={task.progressWidth}
         y={task.y + 25 + 5}
-        height={task.height - 25}
+        height={task.height - 23}
         ry={task.barCornerRadius}
         rx={task.barCornerRadius}
         fill={processColor}
       />
       <rect
-        x={task.x1 + task.progressWidth + 7}
+        x={task.x1 + task.progressWidth + 9}
         width={projectWith - task.progressWidth - 15}
         y={task.y + 25 + 5}
-        height={task.height - 25}
+        height={task.height - 23}
         ry={task.barCornerRadius}
         rx={task.barCornerRadius}
         fill={"rgba(52, 52, 52, 1)"}

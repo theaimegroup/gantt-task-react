@@ -1,7 +1,7 @@
 .projectWrapper {
   cursor: pointer;
   outline: 1px solid var(--colour-brand-tints-transparent-10, rgba(254, 254, 254, 0.1));
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .projectBackground {

@@ -36,7 +36,6 @@ export const TaskItem: React.FC<TaskItemProps> = props => {
     ...props,
   };
   const Icon = task?.icon;
-  console.log(Icon);
   const textRef = useRef<SVGTextElement>(null);
   const [taskItem, setTaskItem] = useState<JSX.Element>(<div />);
   const [isTextInside, setIsTextInside] = useState(true);
@@ -130,7 +129,7 @@ export const TaskItem: React.FC<TaskItemProps> = props => {
         {task.name}
       </text>
       <text
-        x={task.x2 - 80}
+        x={task.x2 - 100}
         y={task.typeInternal === 'task' ? task.y + taskHeight * 0.5 + 5 : task.y + taskHeight * 0.5}
         className={
           isTextInside
