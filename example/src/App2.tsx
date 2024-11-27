@@ -150,7 +150,8 @@ const App = () => {
         fontSize='12px'
         fontFamily='Monospace'
         listCellWidth=""
-        columnWidth={115}
+        columnWidth={120}
+        rowHeight={60}
     />
 }
 
