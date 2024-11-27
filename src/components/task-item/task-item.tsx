@@ -112,12 +112,12 @@ export const TaskItem: React.FC<TaskItemProps> = props => {
     >
       {taskItem}
       {task.typeInternal === 'task' && <svg x={getX() + 10}
-        y={task.typeInternal === 'task' ? task.y + 15 : task.y} width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        y={task.typeInternal === 'task' ? task.y + 12 : task.y} width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
         {Icon}
       </svg>
       }
       <text
-        x={task.typeInternal === 'task' ? getX() + 30 : getX()}
+        x={task.typeInternal === 'task' ? getX() + 35 : getX()}
         y={task.typeInternal === 'task' ? task.y + taskHeight * 0.5 + 5 : task.y + taskHeight * 0.5}
         className={
           isTextInside
