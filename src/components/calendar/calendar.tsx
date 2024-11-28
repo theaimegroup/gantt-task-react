@@ -385,7 +385,7 @@ export const Calendar: React.FC<CalendarProps> = ({
       <rect
         x={0}
         y={0}
-        width={columnWidth * dateSetup.dates.length}
+        width={columnWidth * dateSetup.dates.length + 'vw'}
         height={headerHeight}
         className={styles.calendarHeader}
       />
